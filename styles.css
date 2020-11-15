@@ -13,7 +13,6 @@ body {
 	padding: 0;
 }
 h2 {
-
 	}
 nav ul {
 	list-style-type: none;
@@ -22,7 +21,7 @@ nav ul {
 nav ul li {
 	display: inline;
 	padding: 1%;
-	font-family: 'Yatra One', cursive;
+	font-family: 'Abril Fatface', cursive;
 	}	
 nav a {
 	color: #263931;
@@ -31,12 +30,13 @@ nav a {
 	font-size: 4.5rem;
 	}
 footer {
-	background: #263931;
 	font-size: .7rem;
 	bottom: 0;
-	padding: 3%;
 	clear: both;
+	padding-top: 5%;
+	padding-bottom: 3%;
 	color: #FAF8E4;
 	text-align: center;
+	background: #263931;
 	}
 }
