@@ -1,3 +1,42 @@
 @charset "UTF-8";
 /* CSS Document */
+/*media (max-width: 1000px) and (min-width: 726px)
+Phones: 320 - 767
+Tablets: 768 - 1023
+Desktop: 1024+ */
 
+@media (min-width: 1024px){
+body {
+	font-family: sans-serif;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+h2 {
+
+	}
+nav ul {
+	list-style-type: none;
+	position: center;
+	}
+nav ul li {
+	display: inline;
+	padding: 1%;
+	font-family: 'Yatra One', cursive;
+	}	
+nav a {
+	color: #263931;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 4.5rem;
+	}
+footer {
+	background: #263931;
+	font-size: .7rem;
+	bottom: 0;
+	padding: 3%;
+	clear: both;
+	color: #FAF8E4;
+	text-align: center;
+	}
+}
