@@ -12,6 +12,15 @@ body {
 	margin: 0;
 	padding: 0;
 }
+#headerBar {
+	background: #263931;
+	border-bottom-left-radius: 90%;
+	border-bottom-right-radius: 90%;
+	}
+#headerBar a {
+	color: #CED979;
+	font-family: 'Raleway', sans-serif;
+	}
 h1 {
 	font-family: 'Homemade Apple', cursive;
 	color: #D9CAC5;
@@ -25,6 +34,13 @@ p {
 	color: #263931;
 	font-family: 'Raleway', sans-serif;
 	}
+section a {
+	font-family: 'Raleway', sans-serif;	
+	text-decoration: none;
+	color: #BF8A7E;
+	}
+	
+/* NAVIGATION */	
 nav ul {
 	list-style-type: none;
 	position: center;
@@ -40,14 +56,17 @@ nav a {
 	text-transform: uppercase;
 	font-size: 4.5rem;
 	}
+	
+/* FOOTER */
 footer {
 	font-size: .7rem;
 	bottom: 0;
 	clear: both;
-	padding-top: 5%;
-	padding-bottom: 3%;
 	text-align: center;
 	background: #263931;
+	padding: 1.5rem;
+    border-top-left-radius: 90%;
+	border-top-right-radius: 90%;
 	}
 	footer p {
 	color: #FAF8E4;

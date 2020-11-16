@@ -9,25 +9,34 @@
 		<link rel="stylesheet" href="styles.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Homemade+Apple&family=Raleway&display=swap" rel="stylesheet">
+  		<link href="fontawesome/css/all.css" rel="stylesheet">
     </head>
 	<body>
 		<header>
-			<h1>an ode to you</h1>
+			<div id="headerBar">
+				<div id="logo"></div>
+				<h1>an ode to you</h1>
+				<a href="search.html" title="Search">Search</a>
+				<a href="account.html" title="Account">Account</a>
+				<a href="cart.html" title="Cart">Cart</a>
+			</div>
 			<nav>
 				<ul>
+				<li class="about"><a href ="about.html">About<br><span class="material-icons">chevron_left</span></a></li>
 				<li class="home"><a href ="index.html">Home</a></li>
-				<li class="about"><a href ="about.html">About</a></li>
-				<li class="contact"><a href ="contact.html">Contact</a></li>
-				<li class="gallery"><a href ="gallery.html">Gallery</a></li>
-				<li class="shop"><a href ="cart.html">Cart</a></li>	
+				<li class="contact"><a href ="contact.html">Contact<br><span class="material-icons">chevron_right</span></a></li>
+				<li class="portfolio"><a href ="gallery.html">Potfolio</a></li>
+				<li class="shop"><a href ="shop.html">Shop</a></li>	
 				</ul>
 			</nav>
 		</header>
+		<span class="material-icons">expand_more</span>
 		<section class="intro">
+			<i class="fas fa-shopping-cart"></i>
 		  <h2>Latest & Greatest</h2>
 			<p>Check out what's new by category:</p>
 			
-			<a href ="shop.html">I want to see all of it</a>
+			<a href ="shop.html">show me all of it</a>
 		</section>
 	<footer>
 		<p>&copy; 2020 an ode to you co. All rights reserved.</p>
