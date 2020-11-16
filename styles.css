@@ -7,11 +7,12 @@ Desktop: 1024+ */
 
 @media (min-width: 1024px){
 body {
-	font-family: sans-serif;
+	font-family: 'Raleway', sans-serif;
 	text-align: center;
 	margin: 0;
 	padding: 0;
 }
+/* TOP NAV */
 .topnav {
 	position: relative;
   	overflow: hidden;
@@ -24,9 +25,14 @@ body {
 	float: left;
 	text-decoration: none;
 	color: #FAF8E4;
-	font-size: 1.25em;
 	margin-left: 1em;
 	}
+.topnav-left a:hover {
+	font-style: italic;
+	}
+.topnav-center a:hover{
+	color: #BF8A7E;
+	} 
 .topnav a.active {
 	text-decoration: overline;
 	}
@@ -36,35 +42,50 @@ body {
 	top: 50%;
   	left: 50%;
   	transform: translate(-50%, -50%);
+	font-family: 'Homemade Apple', cursive;
+	color: #D9CAC5;
+	font-style: italic;
+    text-shadow: 
+    -1px -1px 1px #263931 2px 2px 1px #263931;
 }
+.logo {
+	background-image: url("images/logoedited.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	clear: both;
+	background-position: center;
+	font-size: 1.5em;
+	}
 .topnav-left {
-	margin-top: -6em;
 	word-spacing: 6em;
 	text-transform: lowercase;
+	font-size: 1.25em;
 	}	
 .topnav-right {
   	float: right;
 	margin-right: 1.5em;
+	height: .5em;
 }
-	
-
-h1 {
-	font-family: 'Homemade Apple', cursive;
-	color: #D9CAC5;
+.fas {
+	padding: .5em;
+  	font-size: 1.25em;
+  	width: .5em;
+	height: .5em;
+  	text-decoration: none;
+	color: #FAF8E4;
 	}
+.fas:hover {
+    opacity: 0.5;
+}	
 h2 {
 	font-family: 'Homemade Apple', cursive;
 	text-transform: lowercase;
 	color: #263931;
+	text-align: left;
 	}
-p {
-	color: #263931;
-	font-family: 'Raleway', sans-serif;
-	}
-
 	
 /* ICONS */
-.fab, .fas {
+.fab {
 	padding: .5em;
   	font-size: 2em;
   	width: .5em;
@@ -73,7 +94,7 @@ p {
   	text-decoration: none;
 	color: #FAF8E4;
 }	
-.fab:hover, .fas:hover {
+.fab:hover {
     opacity: 0.5;
 }	
 	
@@ -94,6 +115,9 @@ nav a {
 	font-size: 7rem;
 	overflow: hidden;
 	}
+nav a:hover {
+	font-style: italic;
+	}
 nav .fas {
 	color: #263931;
 	}
@@ -108,6 +132,7 @@ footer {
 	padding: 1.4rem;
     border-top-left-radius: 100%;
 	border-top-right-radius: 100%;
+	margin-top: 3em;
 	}
 footer p {
 	color: #FAF8E4;
@@ -129,19 +154,21 @@ footer p {
 	border-top: .25em solid #FAF8E4;
 	background-color: #F8F8F8;
 	transition: all 0.3s linear;
+	margin-bottom: 1.5em;
 }
 .thumbnail:hover {
 	opacity: 0.5;
 	cursor: pointer;
 }
 .thumbnail h4 {
-	color: #BF8A7E;
+	color: #895449;
 	text-align: center;
 	display: inline-block;
     max-height: 1rem;
     min-width: 1rem;
 	font-family: 'Raleway', sans-serif;	
 	text-transform: lowercase;
+	font-weight: bold;
 }
 .cards {
 	width: 100%;
@@ -149,9 +176,21 @@ footer p {
 	max-width: 15rem;
 	max-height: 15rem;
 }
-.latest a {
+.latest p {
+	text-align: left;
+	}
+.shopall {
 	font-family: 'Raleway', sans-serif;	
+	text-align: left;
+	margin-top: 10em;
+	}
+.shopall a {
 	text-decoration: none;
+	color: #895449;
+	font-weight: bold;
+	}
+.shopall a:hover {
+	text-decoration: underline;
 	color: #BF8A7E;
 	}
 }
