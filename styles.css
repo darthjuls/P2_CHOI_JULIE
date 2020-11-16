@@ -17,9 +17,7 @@ body {
 	position: relative;
   	overflow: hidden;
 	background: #263931;
-	border-bottom-left-radius: 100%;
-	border-bottom-right-radius: 100%;
-	padding-bottom: 6em;
+	padding-bottom: 5em;
 }
 .topnav a{
 	float: left;
@@ -27,12 +25,6 @@ body {
 	color: #FAF8E4;
 	margin-left: 1em;
 	}
-.topnav-left a:hover {
-	font-style: italic;
-	}
-.topnav-center a:hover{
-	color: #BF8A7E;
-	} 
 .topnav a.active {
 	text-decoration: overline;
 	}
@@ -45,8 +37,7 @@ body {
 	font-family: 'Homemade Apple', cursive;
 	color: #D9CAC5;
 	font-style: italic;
-    text-shadow: 
-    -1px -1px 1px #000 2px 2px 1px #000;
+    text-shadow: -5px 2px 20px #ced0d3;
 }
 .logo {
 	background-image: url("images/logoedited.png");
@@ -54,17 +45,29 @@ body {
 	background-size: contain;
 	clear: both;
 	background-position: center;
-	font-size: 1.5em;
+	width: 100%;
+	height: 90%;
 	}
+h1 {
+	font-size: 3em;
+	}
+.topnav-center a:hover{
+	color: #BF8A7E;
+	} 
 .topnav-left {
+	margin-top: -1.25em;
 	word-spacing: 6em;
 	text-transform: lowercase;
 	font-size: 1.25em;
 	}	
+.topnav-left a:hover {
+	font-style: italic;
+	}
 .topnav-right {
   	float: right;
 	margin-right: 1.5em;
 	height: .5em;
+	margin-top: -.5em;
 }
 .fas {
 	padding: .5em;
@@ -79,37 +82,78 @@ body {
 }	
 
 	
-/* MAIN NAVIGATION */	
-nav ul {
-	list-style-type: none;
-	position: center;
-	}
-nav ul li {
-	display: inline;
-	padding: 1%;
-	font-family: 'Abril Fatface', cursive;
-	}	
+/* MAIN NAVIGATION */
 nav a {
-	color: #263931;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 7rem;
 	overflow: hidden;
 	}
-nav a:hover {
-	font-style: italic;
+.container {
+	display: flex;
+	height: 100vh;
+	position: relative;
 	}
-nav .fas {
+.section {
+  	flex: 1;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	height: 100%;
+  	overflow: hidden;
+  	background-size: cover;
+  	background-position: center;
+  	color: #fff;
+  	transition: flex .4s ease;
+  	position: relative;
+	font-size: 3em;
+	font-family: 'Abril Fatface', cursive;
+}
+.section a {
+	text-transform: uppercase;
 	color: #263931;
+	text-decoration: none;
 	}
+.section a:hover {
+	animation-name: myanimation;
+  	animation-duration: 2.25s; 
+  	animation-timing-function: ease-out; 
+  	animation-delay: 0;
+  	animation-direction: alternate;
+  	animation-iteration-count: 1;
+  	animation-fill-mode: none;
+}	
+@keyframes myanimation {
+  0% {transform: scale(.75);}
+  100% {transform: scale(1);}
+}
+.section .overlay {
+  	background-color: rgba(0, 0, 0, 0.1);
+  	width: 100%;
+  	height: 100%;
+  	position: absolute;
+  	transition: background-color .8s ease;
+}
+.section .content {
+  	z-index: 2;
+}
+.section:hover {
+  	flex: 2;
+}
+.section:hover .overlay {
+  	background-color: rgba(0, 0, 0, 0.7);
+}
 #about {
 	background-image: url("images/car1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
 	}
 #home {
-	background-image: url("images/car2.jpg");
+	background-image: url("images/car4.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
 	}
 #contact {
 	background-image: url("images/car3.jpg");
+	background-repeat: no-repeat;
+	background0position: center;
 	}
 	
 /* FOOTER */
@@ -120,8 +164,6 @@ footer {
 	text-align: center;
 	background: #263931;
 	padding: 1.4rem;
-    border-top-left-radius: 100%;
-	border-top-right-radius: 100%;
 	margin-top: 3em;
 	}
 footer p {
