@@ -38,7 +38,13 @@ body {
 	color: #D9CAC5;
 	font-style: italic;
     text-shadow: -5px 2px 20px #ced0d3;
-}
+    animation: glow 2s ease-in-out infinite alternate;
+    text-align: center;
+  }
+ @keyframes glow {
+    from {color: #D9CAC5;}
+    to {color: #FAF8E4;}
+  }
 .logo {
 	background-image: url("images/logoedited.png");
 	background-repeat: no-repeat;
