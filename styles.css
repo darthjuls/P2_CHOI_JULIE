@@ -24,6 +24,9 @@ header {
 	z-index: 100;
 	width: 100%;
 	}
+header h1 {
+	min-height: 90%;
+	}
 #logo {
 	position: relative;
 	float: center;
@@ -40,7 +43,7 @@ header {
 	clear: both;
 	background-position: center;
 	width: 100%;
-	height: 90%;
+	height: 80%;
 	text-decoration: none;
 	}
  @keyframes glow {
@@ -66,9 +69,7 @@ nav ul a {
 nav ul a:hover {
 	color: #BF8A7E;
 	}
-#hamburger {
-	display: hidden;
-	}
+#hamburger,
 a.hidden {
 	display: none;
 	}
@@ -292,7 +293,7 @@ header {
 	clear: both;
 	background-position: center;
 	width: 100%;
-	height: 90%;
+	height: 80%;
 	text-decoration: none;
 	}
  @keyframes glow {
@@ -301,16 +302,15 @@ header {
   }
 nav ul {
 	list-style-type: none;
-	margin-top: -6.5em;
+	margin-top: -6em;
 	margin-left: -1em;
 	word-spacing: .5em;
 	float: left;
 	}
 nav ul li {
 	display: inline;
-	margin-top: -1.25em;
 	text-transform: lowercase;
-	font-size: 1.25em;
+	font-size: 1.1em;
 	}
 nav ul a {
 	text-decoration: none;
@@ -319,9 +319,7 @@ nav ul a {
 nav ul a:hover {
 	color: #BF8A7E;
 	}
-#hamburger {
-	display: hidden;
-	}
+#hamburger,
 a.hidden {
 	display: none;
 	}
@@ -329,18 +327,18 @@ a.hidden {
 /* TOP NAV RIGHT */
 .topnav-right {
   	float: right;
-	margin-right: 1.8em;
+	margin-right: 1.5em;
 	height: .5em;
-	margin-top: -7em;
+	margin-top: -6.1em;
 }
 .fas {
-	padding: .6em;
-  	font-size: 1.25em;
-  	width: .5em;
-	height: .5em;
+	padding: .5em;
+  	font-size: 1.1em;
   	text-decoration: none;
-	color: #BF8A7E;
+	color: #FAF8E4;
 	}
+.fas:hover {
+	color: #BF8A7E;
 }	
 
 	
@@ -526,8 +524,84 @@ body {
 /*** TOP NAV ***/
 header {
 	position: absolute;
+	height: 15vh;
+	background: #263931;
+	top: 0;	
+	z-index: 100;
+	width: 100%;
 	}
-
+#hamburger {
+	display:inline-block;
+	float: left;
+	margin-top: -3.1em;
+	font-size: 1.4em;
+	padding: 1em;
+	}
+nav ul, nav:active ul { 
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 1em;
+	width: 50%;
+	background: #FAF8E4;
+	color: #895449;
+	}
+nav li {
+	text-align: center;
+	width: 100%;
+	padding: 1em;
+	top: 0;
+	display: inline-block;
+	text-transform: lowercase;
+	text-decoration: none;
+	}
+nav:hover ul {
+	display: block;
+	color: #BF8A7E;
+	}
+header h1 {
+	font-size: 1.2em;
+	}
+#logo {
+	position: relative;
+	float: center;
+  	transform: translate(-50%, -50%);
+	font-family: 'Homemade Apple', cursive;
+	color: #D9CAC5;
+	font-style: italic;
+    text-shadow: -5px 2px 20px #ced0d3;
+    animation: glow 2s ease-in-out infinite alternate;
+    text-align: center;
+	background-image: url("images/logoedited.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	clear: both;
+	background-position: center;
+	width: 100%;
+	height: 80%;
+	text-decoration: none;
+	}
+ @keyframes glow {
+    from {color: #D9CAC5;}
+    to {color: #FAF8E4;}
+  }
+	
+/* TOP NAV RIGHT */
+.topnav-right {
+  	float: right;
+	height: .5em;
+	margin-top: -4.5em;
+	padding: 1em;
+}
+.fas {
+	padding: .5em;
+  	font-size: 1.1em;
+  	text-decoration: none;
+	color: #FAF8E4;
+	}
+.fas:hover {
+	color: #BF8A7E;
+}	
 
 	
 /*** MAIN NAVIGATION ***/
@@ -592,15 +666,27 @@ header {
 	background-repeat: no-repeat;
 	background0position: center;
 	}
-.float {
+.container .fas {
 	position: absolute;
+	left: 47%;
 	bottom: 1em;
-	font-size: 2em;
-	}
-.float a {
+	font-size: 2.5em;
 	color: #D9CAC5;
 	}
-	
+.container .fas:hover {
+	color: #BF8A7E;
+	}
+nav ul, nav:active ul { 
+	display: none;
+	position: absolute;
+	padding: 20px;
+	background: #fff;
+	border: 5px solid #444;
+	right: 20px;
+	top: 60px;
+	width: 50%;
+	border-radius: 4px 0 4px 4px;
+	}
 
 /*** FOOTER ***/
 footer {
